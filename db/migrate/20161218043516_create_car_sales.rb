@@ -1,8 +1,8 @@
 class CreateCarSales < ActiveRecord::Migration
   def change
     create_table :car_sales do |t|
-      t.seller_id :integer
-      t.car_id :integer
+      t.integer :seller_id
+      t.integer :car_id
       t.timestamps null: false
     end
   end
